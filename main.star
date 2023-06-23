@@ -1,9 +1,9 @@
 parse_input = import_module("github.com/kurtosis-tech/eth2-package/src/package_io/parse_input.star")
 
 static_files = import_module("github.com/kurtosis-tech/eth2-package/src/static_files/static_files.star")
-genesis_constants = import_module("github.com/kurtosis-tech/eth-network-package/src/prelaunch_data_generator/genesis_constants/genesis_constants.star")
+genesis_constants = import_module("github.com/kurtosis-tech/eth-network-package/src/prelaunch_data_generator/genesis_constants/genesis_constants.star@gyani/mev")
 
-eth_network_module = import_module("github.com/kurtosis-tech/eth-network-package/main.star")
+eth_network_module = import_module("github.com/kurtosis-tech/eth-network-package/main.star@gyani/mev")
 transaction_spammer = import_module("github.com/kurtosis-tech/eth2-package/src/transaction_spammer/transaction_spammer.star")
 forkmon = import_module("github.com/kurtosis-tech/eth2-package/src/forkmon/forkmon_launcher.star")
 prometheus = import_module("github.com/kurtosis-tech/eth2-package/src/prometheus/prometheus_launcher.star")
