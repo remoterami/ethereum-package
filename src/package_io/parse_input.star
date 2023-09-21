@@ -25,7 +25,7 @@ FLASHBOTS_MEV_BOOST_PORT = 18550
 MEV_BOOST_SERVICE_NAME_PREFIX = "mev-boost-"
 
 
-package_io = import_module("github.com/kurtosis-tech/eth-network-package/package_io/constants.star")
+package_io = import_module("github.com/kurtosis-tech/eth-network-package/package_io/constants.star@verify")
 
 def parse_input(plan, input_args):
 	result = default_input_args()
