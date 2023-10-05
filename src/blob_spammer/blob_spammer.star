@@ -54,7 +54,7 @@ def get_config(
                         seconds_per_slot,
                     ),
                     'echo "sleep is over, starting to send blob transactions"',
-                    "/tx-fuzz.bin blobs --rpc=http://{0}:{1} --sk={2}".format(
+                    "/tx-fuzz.bin blobs --no-al --rpc=http://{0}:{1} --sk={2}".format(
                         el_client_context.ip_addr,
                         el_client_context.rpc_port_num,
                         prefunded_addresses[1].private_key,
