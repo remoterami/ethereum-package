@@ -287,6 +287,7 @@ def get_beacon_config(
         #   https://github.com/sigp/lighthouse/blob/7c88f582d955537f7ffff9b2c879dcf5bf80ce13/scripts/local_testnet/beacon_node.sh
         # and the option says it's "useful for testing in smaller networks" (unclear what happens in larger networks)
         "--disable-packet-filter",
+        "--enable-private-discovery",
         "--execution-endpoints=" + EXECUTION_ENGINE_ENDPOINT,
         "--jwt-secrets=" + constants.JWT_MOUNT_PATH_ON_CONTAINER,
         "--suggested-fee-recipient=" + constants.VALIDATING_REWARDS_ACCOUNT,
